@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Father's Day Surprise</title>
+
+<style>
+body{
+    margin:0;
+    background:#f5efe6;
+    font-family:Arial, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    text-align:center;
+    padding:20px;
+}
+
+video{
+    width:80%;
+    max-width:700px;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+}
+
+h2{
+    color:#8b5e3c;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Happy Father's Day ❤️</h2>
+
+    <video id = "dadVideo" controls width="800">
+        <source src="fathersday.mp4" type="video/mp4">
+    </video>
+</div>
+<script>
+const video = document.getElementById("dadVideo");
+
+video.addEventListener("ended", function() {
+    window.location.href = "celebration.html";
+});
+</script>
+</body>
+</html>
